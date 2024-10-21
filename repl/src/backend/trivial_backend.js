@@ -9,10 +9,10 @@ import * as util from 'util'
 
 // This is a JSON about the coolest class at Brown :) 
 const informativeJson = {
-  "name" : "cs0320",
-  "description" : "Coolest Software Engineering Class In the World",
-  "rating" : "6/5",
-  "students" : ["Nim Telson", "Gam Sundotra", "Crace Ganterella", "Moe Jaffa"]
+  "name": "cs0320",
+  "description": "Coolest Software Engineering Class In the World",
+  "rating": "6/5",
+  "students": ["Nim Telson", "Sicole Nanchez", "Crace Ganterella", "Jlejandro Aackson"]
 }
 
 // This function is called when a request is made to the server, it returns the JSON above.
@@ -31,9 +31,9 @@ const server = http.createServer(handle);
 const hostname = 'localhost'
 const port = 3232
 server.listen(port, hostname, () => {
-    console.log(`Server is running on http://${hostname}:${port}`);
+  console.log(`Server is running on http://${hostname}:${port}`);
 });
 
 server.on('connection', info => {
-    console.log(`Connection made`);
+  console.log(`Connection made`);
 })
